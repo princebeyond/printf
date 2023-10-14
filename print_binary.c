@@ -6,12 +6,12 @@
  *
  * Return: success
  */
-int print_binary(va_list args)
+int print_binary(va_list b)
 {
 	int count, mask;
 	unsigned int num;
 
-	num = va_arg(args, unsigned int);
+	num = va_arg(b, unsigned int);
 
 	if (num == 0)
 	{
