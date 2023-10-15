@@ -1,11 +1,11 @@
-/*#include "main.h"
+#include "main.h"
 /**
  * print_binary - converts to binary
  * @b: argument
  *
  * Return: integer
  */
-int print_binary(va_list b)
+/*int print_binary(va_list b)
 {
 	int flag = 0;
 	int count = 0;

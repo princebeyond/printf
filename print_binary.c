@@ -4,9 +4,9 @@
  *
  * Return: the number of characters printed
  */
-int print_binary(va_list b)
+int print_binary(va_list val)
 {
-	unsigned int num = va_arg(b, unsigned int);
+	unsigned int num = va_arg(val, unsigned int);
 	int count = 0;
 	int i;
 	int bit;
@@ -14,7 +14,7 @@ int print_binary(va_list b)
 	if (num == 0)
 	{
 		_putchar('0');
-	return (1);
+		return (1);
 	}
 
 	for (i = 31; i >= 0; i--)
@@ -24,5 +24,6 @@ int print_binary(va_list b)
 		count++;
 	}
 
-	return (count);
+	return count;
 }
+
