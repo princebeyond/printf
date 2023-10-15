@@ -7,7 +7,7 @@
  */
 int print_binary(va_list val)
 {
-/*	int flag = 0;
+	int flag = 0;
 	int count = 0;
 	int i, a = 1, b;
 	unsigned int num  = va_arg(val, unsigned int);
@@ -31,4 +31,4 @@ int print_binary(va_list val)
 		_putchar('0');
 	}
 	return (count);
-}*/ ll
+}
