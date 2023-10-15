@@ -2,7 +2,7 @@
 #include <stddef.h>
 /**
  * print_binary - print binary
- * @args: arguements
+ * @b: arguements
  *
  * Return: success
  */
@@ -42,6 +42,6 @@ int print_binary(va_list b)
  */
 int main(void)
 {
-    _printf("%b\n", 98);
-    return (0);
+	_printf("%b\n", 98);
+	return (0);
 }
