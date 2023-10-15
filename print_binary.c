@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_binary - converts to binary
- * @val: argument
+ * @b: argument
  *
  * Return: integer
  */
