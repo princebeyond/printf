@@ -1,36 +1,34 @@
 #include "main.h"
-#include <stddef.h>
 /**
- * print_binary - print binary
- * @b: arguements
+ * print_binary - converts to binary
+ * @val: argument
  *
- * Return: success
+ * Return: integer
  */
-int print_binary(va_list b)
+int print_binary(va_list val)
 {
-	int count, mask;
-	unsigned int num;
+	int flag = 0;
+	int count = 0;
+	int i, a = 1, b;
+	unsigned int num  = va_arg(val, unsigned int);
+	unsigned int p;
 
-	num = va_arg(b, unsigned int);
-
-	if (num == 0)
+	for (i = 0; i < 32; i++)
 	{
-		_putchar('0');
-		return (1);
+		p = ((a << (32 - i)) & num);
+		if (p >> (31 - i))
+			flag = 1;
+		if (flag)
+		{
+			b = p >> (31 - i);
+			_putchar(b + 48);
+			count++;
+		}
 	}
-
-	count = 0;
-	mask = 1U << (sizeof(unsigned int) * 8 - 1);
-
-	while (mask > 0)
+	if (count == 0)
 	{
-		if (num & mask)
-			_putchar('1');
-		else
-			_putchar('0');
-		mask >>= 1;
 		count++;
+		_putchar('0');
 	}
-
 	return (count);
 }
