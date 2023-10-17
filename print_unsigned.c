@@ -9,9 +9,22 @@
 int print_unsigned(va_list val)
 {
 	unsigned int num = va_arg(val, unsigned int);
-	int count = 0;
+	int digits = 0;
 
-	count += print_unum(num);
-	return (count);
+	if (num == 0)
+	{
+		_putchar('0');
+		return 1;
+	}
+
+	while (num > 0)
+	{
+		digit = num % 10;
+		_putchar(digit + '0');
+		num /= 10;
+		digits++;
+	}
+
+    return digits;
+
 }
-
