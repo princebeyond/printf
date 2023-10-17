@@ -7,7 +7,7 @@
   * @format: format (char, string, int, decimal)
   * Return: NULL or function associated ;
   */
-int (*find_function(const char *format))(va_list)
+/*int (*find_function(const char *format))(va_list)
 {
 	unsigned int i = 0;
 	code_f find_f[] = {
@@ -36,7 +36,7 @@ int (*find_function(const char *format))(va_list)
   * @format: format (char, string, int, decimal)
   * Return: size the output text;
   */
-int _printf(const char *format, ...)
+/*int _printf(const char *format, ...)
 {
 	va_list ap;
 	int (*f)(va_list);
@@ -73,4 +73,4 @@ int _printf(const char *format, ...)
 	}
 	va_end(ap);
 	return (cprint);
-}
+}*/

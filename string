@@ -7,7 +7,7 @@
  *
  * Return: 1.
  */
-int print_string(va_list s)
+/*int print_string(va_list s)
 {
 	char *my_string;
 	int  i = 0;

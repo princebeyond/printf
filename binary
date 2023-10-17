@@ -5,7 +5,7 @@
  *
  * Return: integer
  */
-int print_binary(va_list b)
+/*int print_binary(va_list b)
 {
 	int flag = 0;
 	int count = 0;
@@ -31,4 +31,4 @@ int print_binary(va_list b)
 		_putchar('0');
 	}
 	return (count);
-}
+}*/

@@ -6,7 +6,7 @@
  *
  * Return: 1.
  */
-int print_char(va_list c)
+/*int print_char(va_list c)
 {
 	unsigned char my_char;
 
@@ -19,7 +19,7 @@ int print_char(va_list c)
  *
  * Return: 1.
  */
-int print_porcentage(void)
+/*int print_porcentage(void)
 {
 	_putchar('%');
 	return (1);

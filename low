@@ -1,15 +1,15 @@
 #include "main.h"
 
 /**
- * print_upper_hex - prints an uppercase hexadecimal number
- * @X: argument
+ * print_lower_hex - prints a lowercase hexadecimal number
+ * @x: argument
  *
  * Return: number of characters printed
  */
-int print_upper_hex(va_list X)
+/*int print_lower_hex(va_list x)
 {
-	unsigned int num = va_arg(X, unsigned int);
-	char hex_digits[] = "0123456789ABCDEF";
+	unsigned int num = va_arg(x, unsigned int);
+	char hex_digits[] = "0123456789abcdef";
 	int count = 0;
 	int hex[10];
 	int i = 0;
@@ -34,5 +34,6 @@ int print_upper_hex(va_list X)
 		i--;
 	}
 
-	return (count);
+	return (count);*/
 }
+
