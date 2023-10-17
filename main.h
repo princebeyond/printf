@@ -12,7 +12,7 @@ int print_string(va_list s);
 int print_int(va_list i);
 int print_dec(va_list d);
 int print_binary(va_list b);
-int print_unsigned(va_list val);
+int print_unsigned(va_list args);
 int print_octal(va_list val);
 int print_hex(va_list val);
 int print_hex_upper(va_list val);
