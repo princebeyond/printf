@@ -6,10 +6,11 @@
  *
  * Return: number of characters printed
  */
-int print_unsigned(va_list val)
+int print_unsigned(va_list u)
 {
-	unsigned int num = va_arg(val, unsigned int);
+	unsigned int num = va_arg(u, unsigned int);
 	int digits = 0;
+	int digit;
 
 	if (num == 0)
 	{
