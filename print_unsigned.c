@@ -2,7 +2,7 @@
 
 /**
  * print_unsigned - prints an unsigned integer
- * @val: argument
+ * @u: argument
  *
  * Return: number of characters printed
  */
@@ -15,7 +15,7 @@ int print_unsigned(va_list u)
 	if (num == 0)
 	{
 		_putchar('0');
-		return 1;
+		return (1);
 	}
 
 	while (num > 0)
@@ -26,6 +26,6 @@ int print_unsigned(va_list u)
 		digits++;
 	}
 
-    return digits;
+	return (digits);
 
 }

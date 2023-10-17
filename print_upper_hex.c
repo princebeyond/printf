@@ -1,16 +1,38 @@
 #include "main.h"
 
 /**
- * print_hex_upper - prints an uppercase hexadecimal number
- * @val: argument
+ * print_upper_hex - prints an uppercase hexadecimal number
+ * @X: argument
  *
  * Return: number of characters printed
  */
-int print_hex_upper(va_list val)
+int print_upper_hex(va_list X)
 {
-	unsigned int num = va_arg(val, unsigned int);
+	unsigned int num = va_arg(X, unsigned int);
+	char hex_digits[] = "0123456789ABCDEF";
 	int count = 0;
+	int hex[10];
+	int i = 0;
 
-	count += print_hexnum_upper(num);
+	if (num == 0)
+	{
+		_putchar('0');
+		return (1);
+	}
+
+	while (num > 0)
+	{
+		hex[i] = num % 16;
+		num /= 16;
+		i++;
+	}
+
+	while (i > 0)
+	{
+		_putchar(hex_digits[hex[i - 1]]);
+		count++;
+		i--;
+	}
+
 	return (count);
 }
